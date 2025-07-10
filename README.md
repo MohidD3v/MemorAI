@@ -123,7 +123,4 @@ MIT
 Pull requests welcome! For major changes, open an issue first to discuss what you’d like to change.
 
 ---
-
-## 📫 Contact
-
-Questions? Open an issue or reach out at [your-email@example.com](mailto:your-email@example.com)
+Made by Mohid
