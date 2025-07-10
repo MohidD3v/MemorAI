@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MemorAI
 
-## Getting Started
+MemorAI is a full-stack AI-powered learning assistant. Upload PDFs, chat with your documents, and generate memory quizzes using OpenAI—all in your browser.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- Upload PDF files and extract content
+- Chat with your document using AI (OpenAI GPT)
+- Generate and take quizzes based on your content
+- Modern UI with Next.js, Tailwind CSS, and shadcn/ui
+- Express.js backend for file processing and AI endpoints
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/memorai.git
+cd memorai
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+cd backend
+npm install
+cd ..
+```
+
+### 3. Configure Environment Variables
+
+- Copy `.env.example` to `.env` in `backend/`
+- Add your OpenAI API key:
+
+```env
+# backend/.env
+PORT=5000
+FRONTEND_URL=http://localhost:3000
+OPENAI_API_KEY=sk-...
+```
+
+### 4. Start the Backend
+
+```bash
+cd backend
+npm run dev
+```
+- The backend runs at [http://localhost:5000](http://localhost:5000)
+
+### 5. Start the Frontend
+
+Open a new terminal in the project root:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+- The frontend runs at [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🖥️ Usage
+
+1. **Upload a PDF** using the drag & drop interface.
+2. **Chat** with your document using the AI chat box.
+3. **Generate quizzes** and test your knowledge.
+
+---
+
+## 🛠️ Project Structure
+
+```
+memorai/
+├── app/           # Next.js frontend (pages, components)
+├── backend/       # Express.js backend (API, file processing)
+├── components/    # UI components (shadcn/ui)
+├── lib/           # API client and utilities
+├── hooks/         # Custom React hooks
+├── public/        # Static assets
+├── .env           # (backend) Environment variables
+├── README.md
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `backend/.env`:
+  - `PORT` - Backend port (default: 5000)
+  - `FRONTEND_URL` - Frontend URL (default: http://localhost:3000)
+  - `OPENAI_API_KEY` - Your OpenAI API key
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧑‍💻 Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:** Next.js 15, Tailwind CSS v4, shadcn/ui
+- **Backend:** Express.js, TypeScript, OpenAI, pdf-parse, multer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🐳 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Deploy frontend (Next.js) to Vercel, Netlify, or your own server.
+- Deploy backend (Express) to Render, Railway, Heroku, or your own server.
+- Set environment variables on your deployment platform.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📝 License
+
+MIT
+
+---
+
+## 🤝 Contributing
+
+Pull requests welcome! For major changes, open an issue first to discuss what you’d like to change.
+
+---
+
+## 📫 Contact
+
+Questions? Open an issue or reach out at [your-email@example.com](mailto:your-email@example.com)
